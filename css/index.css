@@ -1,0 +1,433 @@
+@charset "UTF-8";
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+  border: 0px;
+}
+
+* {
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+}
+
+.iconfont {
+  font-family: 'iconfont';
+}
+
+ul, li, ol, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 109.86667px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 160px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 204.8px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 341.33333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 384px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 426.66667px;
+  }
+}
+
+.outsite {
+  overflow: hidden;
+  position: relative;
+}
+
+.outsite .lunbo {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #80CEFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.outsite .lunbo .lun {
+  width: 250%;
+  position: absolute;
+  top: 0;
+  left: -90%;
+}
+
+.outsite .lunbo-a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.outsite .lunbo-a .lun {
+  width: 130%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outsite .lunbo-a .zhezhao-a {
+  width: 250%;
+  height: 70%;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 1.8rem;
+  left: 1rem;
+  transform: skewX(30deg);
+}
+
+.outsite .lunbo-b {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.outsite .lunbo-b .lun {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+}
+
+.outsite .lunbo-c {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.outsite .lunbo-c .lun {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.outsite .one {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 4;
+}
+
+@keyframes donghua-a {
+  from {
+    opacity: 0;
+    top: 2.5rem;
+  }
+  to {
+    opacity: 1;
+    top: 3.1rem;
+  }
+}
+
+@keyframes donghua-b {
+  from {
+    opacity: 0;
+    top: 2.7rem;
+  }
+  to {
+    opacity: 1;
+    top: 3.35rem;
+  }
+}
+
+.outsite .one .c {
+  animation-delay: 1s;
+  animation: donghua-a 2s 1s alternate;
+  font-size: 22px;
+  position: fixed;
+  top: 3.1rem;
+  left: 0.8rem;
+  color: #fff;
+  animation-fill-mode: backwards;
+  z-index: 4;
+}
+
+.outsite .one .d {
+  animation: donghua-b 2s;
+  font-size: 30px;
+  position: fixed;
+  top: 3.35rem;
+  left: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  z-index: 4;
+}
+
+@keyframes donghua-e {
+  from {
+    opacity: 0;
+    left: -1rem;
+  }
+  to {
+    left: 0.3rem;
+    opacity: 1;
+  }
+}
+
+@keyframes donghua-f {
+  from {
+    opacity: 0;
+    right: -1rem;
+  }
+  to {
+    right: 0.3rem;
+    opacity: 1;
+  }
+}
+
+.outsite .one .e {
+  animation-delay: 3.5s;
+  animation: donghua-e 1s 3.5s;
+  width: 0.06rem;
+  height: 0.8rem;
+  background: #fff;
+  position: fixed;
+  top: 3rem;
+  left: 0.3rem;
+  transform: skewY(-30deg);
+  animation-fill-mode: backwards;
+}
+
+.outsite .one .f {
+  animation-delay: 3.5;
+  animation: donghua-f 1s 3.5s;
+  width: 0.06rem;
+  height: 0.8rem;
+  background: #fff;
+  position: fixed;
+  top: 3rem;
+  right: 0.3rem;
+  transform: skewY(30deg);
+  animation-fill-mode: backwards;
+}
+
+@keyframes donghua-c {
+  from {
+    opacity: 0;
+    left: -4rem;
+  }
+  to {
+    left: 1.3rem;
+    opacity: 1;
+  }
+}
+
+.outsite .one .g {
+  animation-delay: 2s;
+  animation: donghua-c 2s 2s alternate;
+  width: 1.1rem;
+  height: 0.22rem;
+  position: fixed;
+  top: 3.95rem;
+  left: 1.3rem;
+  background: #fff;
+  animation-fill-mode: backwards;
+}
+
+.outsite .one .g .iconfont {
+  width: 50%;
+  height: 0.18rem;
+  float: right;
+  margin-top: 0.02rem;
+  margin-right: 0.02rem;
+  background: #454545;
+  color: #fff;
+  text-align: center;
+  line-height: 0.18rem;
+  font-size: 20px;
+}
+
+.outsite .one .g .left {
+  color: #444444;
+  line-height: 0.22rem;
+  margin-left: 0.07rem;
+  font-size: 10px;
+}
+
+.outsite .a {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #FFCB0C;
+  position: absolute;
+  top: -0.7rem;
+  left: -0.5;
+  transform: rotate(45deg);
+  z-index: 4;
+}
+
+.outsite .a .wen {
+  color: #fff;
+  position: fixed;
+  top: 0.9rem;
+  left: 0.5rem;
+  font-size: 25px;
+  transform: rotate(-45deg);
+}
+
+.outsite .b {
+  width: 1rem;
+  height: 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  z-index: 500;
+}
+
+.outsite .b .con-a {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: #FFCB0C;
+  color: #fff;
+  text-align: center;
+  line-height: 0.4rem;
+}
+
+.outsite .b .iconfont {
+  background: #5F6062;
+  color: #fff;
+}
+
+.outsite .b .cehua-a {
+  width: 2rem;
+  height: 3.6rem;
+  background: #5F6062;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(2rem);
+  transition: all 1s;
+}
+
+.outsite .b .cehua-a .list-a {
+  width: 100%;
+  height: 0.6rem;
+  border-bottom: 1px solid #6C6C6C;
+  line-height: 0.6rem;
+}
+
+.outsite .b .cehua-a .list-a .iconfont {
+  color: #fff;
+  float: left;
+  margin-left: 0.25rem;
+  font-size: 25px;
+}
+
+.outsite .b .cehua-a .list-a .list-b {
+  float: left;
+  color: #fff;
+  margin-left: 0.2rem;
+  font-size: 18px;
+}
+
+.outsite .nav {
+  width: 100%;
+  height: 0.4rem;
+  background: rgba(102, 102, 102, 0.2);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+.outsite .nav .footer {
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 0.4rem;
+}
+
+.outsite .nav .footer .aaa {
+  color: #fff;
+}
+
+.outsite .nav .footer .iconfont {
+  color: #fff;
+  font-size: 25px;
+  display: none;
+}
